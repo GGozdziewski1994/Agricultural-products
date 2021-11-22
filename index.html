@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gospodarstwo Rolne</title>
+    <link rel="stylesheet" href="./src/sass/style.scss">
+    <link rel="icon" href="src/img/pngegg%20(2).png">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="src/img/cow2.png" alt="Cow">
+                <span>Gospodarstwo Rolne </br> Leszek Goździewski</span>
+            </div>
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link link" href="#section-1">Produkty</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link link" href="#section-2">Galeria</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link link" href="#section-3">O Nas</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--btn btn--show-modal">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__title">
+            <h1>Zdrowa <span class="header__title-highlight">żywność</span> prosto</br> od <span class="header__title-highlight">rolnika</span></h1>
+            <h3>Świeże produkty wytwarzane każdego dnia</h3>
+            <button class="header__btn-text btn-scroll-to">Czytaj więcej &DownArrow;</button>
+            <img src="src/img/cheese/siami-tan-ZG9wzHhMM2M-unsplash.jpg" class="header__img">
+        </div>
+    </header>
+
+    <section class="section" id="section-1">
+        <h2>Produkty</h2>
+        <h3>Wybierz swoje ulubione produkty</h3>
+        <div class="operations">
+            <button class="operations__btn operations__tab--1 operations__tab--active" data-tab="1">Sery</button>
+            <button class="operations__btn operations__tab--2" data-tab="2">Twarogi</button>
+            <button class="operations__btn operations__tab--3" data-tab="3">Masło</button>
+            <button class="operations__btn operations__tab--4" data-tab="4">Inne produkty</button>
+        </div>
+
+        <div class="operations__content operations__content--1 operations__content--active">
+            <h4>Różne rodzaje serów do wyboru</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="operations__content operations__content--2">
+            <h4>Różne rodzaje twarogów do wyboru</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="operations__content operations__content--3">
+            <h4>Masło masło</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="operations__content operations__content--4">
+            <h4>Wiele innych produktów</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="section-2">
+        <h2>Galeria</h2>
+        <h3>Zobacz nasze wyroby</h3>
+        <div class="slide__container">
+            <div class="slide__img"><img src="src/img/cheese/towfiqu-barbhuiya-Vr4GE2yTfjI-unsplash.jpg" alt="ser 1"></div>
+            <div class="slide__img"><img src="src/img/cheese/aleksey-melkomukov-OxUaBR0ORb0-unsplash.jpg" alt="ser 2"></div>
+            <div class="slide__img"><img src="src/img/cheese/zoe-schaeffer-YFmkU2EOm-8-unsplash.jpg" alt="ser 3"></div>
+            <div class="slide__img"><img src="src/img/cheese/katrin-leinfellner-v9deD75EaRw-unsplash.jpg" alt="ser 4"></div>
+
+            <button class="slide__btn slide__btn--left">&larr;</button>
+            <button class="slide__btn slide__btn--right">&rarr;</button>
+            <div class="dots">
+                <!--<div class="dots__dot dots__dot-active"></div>
+                <div class="dots__dot"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section-3">
+        <h2>O nas</h2>
+        <h3>Dowidz się więcej o nas i naszych wyrobach</h3>
+        <div class="container__about">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </section>
+
+    <section class="section section--contact">
+        <div class="section--contact--text">
+            <h3>Nie czekaj! Zacznij juz dzis zdrowo się </br> odżywiać wyrobami prosto od rolnika</h3>
+        </div>
+
+        <button class="section--contact--btn btn--show-modal">Skontaktuj się z nami</button>
+    </section>
+
+    <footer class="section--contact">
+        <ul class="footer__nav">
+            <li class="footer__item">
+                <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Contact</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#">Privacy policy</a>
+            </li>
+        </ul>
+        <img class="footer__logo" src="src/img/cow.png">
+        <p>&copy; Copyright by Grzegorz Goździewski</p>
+    </footer>
+
+    <div class="modal hidden">
+        <button class="modal__btn-close">&times;</button>
+        <h2 class="modal__header"><span class="header__title-highlight">Gospodarstwo Rolne</span> Leszek Goździewski </br> <span class="header__title-highlight">Skontaktuj</span> się z Nami</h2>
+        <h4>Nr tel 723 496 011</h4>
+        <h4>Mail: g.gozdziewski1994@gmail.com</h4>
+        <h4>Adres: Krępiny 65</h4>
+    </div>
+    <div class="overlay hidden"></div>
+
+
+    <script type="module" src="./src/js/script.js"></script>
+</body>
+</html>

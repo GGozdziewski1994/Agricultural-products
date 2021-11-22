@@ -1,0 +1,21 @@
+{
+  "name": "agricultural-products",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Grzegorz Goździewski",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1"
+  }
+}
