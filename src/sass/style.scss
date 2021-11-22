@@ -350,41 +350,6 @@ body {
 @media only screen and (max-width: 500px) {
   .nav {
     padding: 0;
-    display: block;
-    height: auto;
-    &__logo {
-      padding-bottom: 1rem;
-    }
-    &__links {
-      justify-content: center;
-    }
-    &__item {
-      margin-left: 1rem;
-    }
-  }
-  .header {
-    height: 100%;
-    &__title {
-      display: block;
-      padding-top: 2rem;
-      text-align: center;
-
-      & h1, h3 {
-        padding-bottom: 2rem;
-      }
-
-      & img {
-        padding: 0;
-      }
-    }
-  }
-
-  .section {
-    padding: 5rem 0;
-    & h2, h3 {
-      text-align: center;
-      padding: 0 0 1rem;
-    }
   }
 
   .operations {
@@ -404,9 +369,20 @@ body {
 }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (min-width: 500px) {
   .nav {
     padding: 1rem;
+  }
+
+  .operations {
+    &__content {
+      padding: 2rem 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
     height: auto;
     &__logo {
       padding-bottom: 1rem;
